@@ -6,7 +6,7 @@ module.exports = {
 
       name: "todoapi",
 
-      script: './dist/start.js',
+      script: './src/index.js',
 
       instances: 2,
 
