@@ -31,7 +31,6 @@ exports.updateTask = async (req, res) => {
         const id = req.params.id;
         const data = req.body;
         const task = await Task.findByIdAndUpdate(id, data);
-        console.log(task);
         if(task === null){
             res.json(`Task ${id} doesn't exist`);
         }
